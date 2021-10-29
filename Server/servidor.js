@@ -34,4 +34,9 @@ io.on("connection", (socket) => {
   });
 });
 
-servidor.listen(5000, () => console.log("Servidor inicializado"));
+const PORT = process.env.PORT || 5000;
+
+servidor.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
+
+// servidor.listen(5000, () => console.log("Servidor inicializado"));
