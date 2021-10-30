@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Average&family=Poppins&display=swap');
+
+.containerChat{
+    font-family: 'Titillium Web', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 1.71429px;
+    height: 100%;
+}
+
+.containerChat h3{
+  color: #5A291B;
+  margin-left: 1em;
+}
+
+.containerChat i{
+  color:red;
+  font-size: 2em;
+  margin-left:80vw;
+  position: absolute;
+  margin-top: 0.5em;
+}
+
+form{
+  position: relative;
+}
+
+.chat {
+    position: absolute;
+    display: block;
+    flex-direction: column;
+    width: 85vw;
+    min-height: 50vh;
+    max-height: 50vh;
+    overflow: scroll;
+    border: 2px solid #42A650;
+    border-radius: 20px;
+    padding: 0.5em 0em 2em 1em;
+    font-size: 18px;
+    
+    /* margin-bottom: 5em; */
+}
+
+.chat::-webkit-scrollbar {
+  display: none;
+}
+
+.containerMessageChat{
+  position: absolute;
+  bottom: 0px;
+}
+
+.messageChat{
+  height: 2em;
+  width:85.3vw;
+  padding-left: 1em;
+  padding-top: 0.5em;
+  position:absolute;
+  bottom: 0vh;
+  top: 24.2em;
+  /* left: -1.4em; */
+  border-radius: 0em 0em 1.3em 1.3em;
+  border: 1px solid #42A650;
+  border-top: 2px solid #42A650;
+  /* margin-top:1em; */
+}
+
+.messageChat:focus{
+  outline:none;
+}
+
+/* .send{
+  width:5vw;
+  background: #42A650;
+  position:absolute;
+  bottom: -175px;
+  left:60.7rem;
+  padding: 0.5em 0.5em 0.5em;
+  border-left: none;
+  border-radius: 0em 0em 1em 0em;
+  border: 2px solid #42A650;
+}
+
+.send:focus{
+  outline:none;
+} */
