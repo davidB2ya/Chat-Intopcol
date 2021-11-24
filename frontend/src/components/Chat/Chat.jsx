@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import socket from "../Socket.js";
 import styles from "./Chat.module.css";
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 // import { Context } from "../Context/Context.js";
 
 const Chat = ({nombre}) => {
@@ -42,7 +42,7 @@ const Chat = ({nombre}) => {
 
   return (
     <div className={styles.containerChat}>
-      <h3>Hola {nombre} Bienvenido al Grupo de Gerencia</h3> 
+      <h3>Hola {nombre} Bienvenido </h3> 
       {/* <i class="fas fa-window-close"></i> */}
       {/* <Link to={"/contacts"}><i class="far fa-window-close"></i></Link> */}
       <form onSubmit={submit}>

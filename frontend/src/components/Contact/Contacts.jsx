@@ -17,52 +17,9 @@ const Contacts = ({username}) => {
 
     onclick = () => {
         setChats(true)
+       
     }
-    // const initialState = () => {
-        
-    // }
-    // const reducer = (state = initialState(), action) =>{
-    //     return state
-    // }
-
-    // const [state, dispatch] = React.useReducer(reducer, reducer())
- 
-
-    // const [mensaje, setMensaje] = useState("");
-    // const [mensajes, setMensajes] = useState([]);
-  
-    // useEffect(() => {
-    //   socket.emit("conectado", username);
-    // }, [username]);
-  
-    // useEffect(() => {
-    //   socket.on("mensajes", (mensaje) => {
-    //     setMensajes([...mensajes, mensaje]);
-    //   });
-  
-    //   return () => {
-    //     socket.off();
-    //   };
-    // }, [mensajes]);
-  
-    // const divRef = useRef(null);
-    // useEffect(() => {
-    //   divRef.current.scrollIntoView({ behavior: "smooth" });
-    // });
-  
-    // const submit = (e) => {
-    //   if(mensaje !== ""){
-    //     e.preventDefault();
-    //     socket.emit("mensaje", username, mensaje);
-    //     setMensaje("");
-    //   }else{
-    //     e.preventDefault();
-    //   }
-    // };
-
-
-
-
+   
     return (
         <div className={styles.contacts}>
             <div className={styles.header}>

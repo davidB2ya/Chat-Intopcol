@@ -1,23 +1,20 @@
-import React, { Component } from 'react';
+import React, { createContext } from 'react';
 import info from '../../data/data.json'
 
 
-export const Context = React.createContext();
+export const Context = createContext();
 
-export class ContextProvider extends Component {
+export const ContextProvider = ({children}) => {
 
-    state = {
+    const initialState = {
         users: info
     }
 
-    render() {
-        const {users} = this.state;
         return (
             <ContextProvider 
-                value={{users}}>
-                    {this.props.children}
+                value={initialState}>
+                    {children}
             </ContextProvider>
         )
-    }
-
 }
+
