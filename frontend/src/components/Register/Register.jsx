@@ -25,10 +25,10 @@ const Register = () => {
                     break;
                 }else{
                    console.log("No hizo mach con el index: " , index);
-                   alert("Usuario o contraseña incorrecto")
+                //    alert("Usuario o contraseña incorrecto")
                    setNombre("")
                    setPass("")
-                   break;
+                //    break;
                 }
             };
         }else{
