@@ -1,0 +1,46 @@
+{
+  "name": "chat-intopcol",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "workspaces": [
+    "frontend",
+    "Server"
+  ],
+  "engines": {
+    "npm":"7.23.0"
+  },
+  "scripts": {
+    "build": "SKIP_PREFLIGHT_CHECK=true npm run build --workspace=frontend",
+    "start": "npm run start --workspace=Server",
+    "dev:api": "npm run build && npm run dev --workspace=Server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "eslintConfig": {
+    "ignorePatterns": "build",
+    "extends":[
+      "react-app",
+      "react-app/jest",
+      "./node_modules/standard/eslintrc.json"
+    ],
+    "env": {
+      "cypress/globals": true,
+      "jest": true
+    },
+    "plugins": [
+      "cypress"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidB2ya/Chat-Intopcol.git"
+  },
+  "keywords": [],
+  "author": "B2ya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidB2ya/Chat-Intopcol/issues"
+  },
+  "homepage": "https://github.com/davidB2ya/Chat-Intopcol#readme"
+}
